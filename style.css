@@ -1,0 +1,59 @@
+.nav-bar
+{
+    background-color: #59a0ee;
+}
+
+.nav-bar ul
+{
+    display: flex;
+    list-style: none;
+    margin-bottom: 0px;
+    float: right;
+}
+
+.nav-bar ul li
+{
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
+
+.nav-bar ul li:hover {
+    background: #2f8aed;
+}
+
+.nav-bar ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.nav-bar ul li a i
+{
+    width: 12px;
+    padding-left: 4px;
+}
+
+.nav-bar ul .child, .nav-bar ul .child1 {
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: 54px;
+    left: 10%;
+    z-index: 20;
+    background: #59a0ee;
+}
+
+.nav-bar ul .child1 {
+    top: 0;
+    left: 100%;
+}
+
+.nav-bar ul.parent li:hover ul.child{
+    display: block;
+}
+
+.nav-bar ul.child li:hover ul.child1 {
+    display: block;
+}
